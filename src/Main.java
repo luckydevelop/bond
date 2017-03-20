@@ -3,16 +3,15 @@ import java.time.format.DateTimeFormatter;
 
 public class Main {
 
-    public static void main(String[] args)
-    {
-       System.out.println(getCurrentDate("yearFirst"));
+    public static void main(String[] args) {
+        System.out.println(getCurrentDate("yearFirst"));
     }
 
-    public static String getCurrentDate(String dateFormat){
+    public static String getCurrentDate(String dateFormat) {
         LocalDate date = LocalDate.now();
         DateTimeFormatter dtf;
 
-        switch (dateFormat){
+        switch (dateFormat) {
             case "yearLast":
                 dtf = DateTimeFormatter.ofPattern("MM/dd/y");
                 break;
